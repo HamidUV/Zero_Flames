@@ -146,7 +146,7 @@ const ServicesPage: React.FC = () => {
       </h1>
       <p className="text-xl font-light max-w-3xl mx-auto text-red-100 leading-relaxed">
         From Fire NOC consultancy to complete system installation and maintenance, 
-        we provide end-to-end fire protection solutions across Kerala.
+        we provide end-to-end fire protection solutions.
       </p>
     </div>
 
@@ -210,7 +210,7 @@ const ServicesPage: React.FC = () => {
 
               {/* Features */}
               <div className="mb-6">
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                <h3 className="text-lg font-light text-gray-900 mb-3">
                   Key Features:
                 </h3>
                 <div className="grid grid-cols-2 gap-2">
@@ -220,7 +220,7 @@ const ServicesPage: React.FC = () => {
                       className="flex items-center space-x-2"
                     >
                       <div className="w-2 h-2 bg-red-600 rounded-full"></div>
-                      <span className="text-gray-700 text-sm">{feature}</span>
+                      <span className="text-gray-600 text-sm">{feature}</span>
                     </div>
                   ))}
                 </div>
@@ -228,7 +228,7 @@ const ServicesPage: React.FC = () => {
 
               {/* What We Provide */}
               <div className="mb-6 flex-grow">
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                <h3 className="text-lg font-light text-gray-900 mb-3">
                   What We Provide:
                 </h3>
                 <div className="space-y-3">
@@ -255,7 +255,7 @@ const ServicesPage: React.FC = () => {
             >
               <div className="text-center text-gray-600">
                 <div className="text-red-600 mb-4 text-3xl">{service.icon}</div>
-                <p className="font-semibold">{service.title}</p>
+                <p className="font-light">{service.title}</p>
                 <p className="text-sm text-gray-500">Click to enquire on WhatsApp</p>
               </div>
             </div>
@@ -272,7 +272,7 @@ const ServicesPage: React.FC = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Industries We Serve</h2>
+            <h2 className="text-3xl font-light text-gray-900 mb-4">Industries We Serve</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Our expertise spans across various industries, providing tailored fire protection solutions 
               for each sector's unique requirements.
@@ -285,7 +285,7 @@ const ServicesPage: React.FC = () => {
                 <div className="bg-red-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Shield className="w-6 h-6 text-red-600" />
                 </div>
-                <h3 className="font-semibold text-gray-900">{industry}</h3>
+                <h3 className="font-light text-gray-900">{industry}</h3>
               </div>
             ))}
           </div>
@@ -295,7 +295,7 @@ const ServicesPage: React.FC = () => {
       {/* CTA Section */}
       <section className="py-14 bg-gradient-to-r from-red-800 to-red-900">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <h2 className="text-3xl font-bold text-white mb-3">
+    <h2 className="text-3xl font-light text-white mb-3">
       Need a Custom Fire Protection Solution?
     </h2>
     <p className="text-red-100 mb-6 max-w-2xl mx-auto text-lg">
@@ -303,7 +303,7 @@ const ServicesPage: React.FC = () => {
       Get a free consultation and quote today.
     </p>
     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-      <button className="bg-white text-red-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center">
+      <button className="bg-white text-red-700 px-8 py-3 rounded-lg font-light hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center">
         <Phone className="w-5 h-5 mr-2" />
         Call +91 9876543210
       </button>

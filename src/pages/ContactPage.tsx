@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Phone, Mail, MapPin, Clock, Send, MessageCircle, CheckCircle } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Send, MessageCircle} from 'lucide-react';
+// import { Whatsapp } from 'lucide-react';
 
 const ContactPage: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -41,27 +42,28 @@ const ContactPage: React.FC = () => {
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Phone",
-      details: ["+91 9876543210", "+91 8765432109"],
+      details: ["+91 9995125633", "0495 4057944"],
       // description: "Call us for immediate assistance"
     },
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email",
-      details: ["info@zeroflames.com", "support@zeroflames.com"],
+      details: ["zeroflames.info@gmail.com"],
       // description: "Send us your requirements"
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       title: "Address",
-      details: ["Eish, Vallath Road, Moozhikal", "Kozhikode, Kerala, India"],
+      details: ["Panathuthazham, Kottooli","Calicut, Kerala, 673016"],
       // description: "Visit our office"
     },
     {
       icon: <Clock className="w-6 h-6" />,
       title: "Business Hours",
-      details: ["Mon-Sat: 9:00 AM - 6:00 PM", "Sunday: Emergency calls only"],
+      details: ["Mon-Sat: 10:00 AM - 6:00 PM"],
       // description: "24/7 Emergency Support Available"
     }
+    
   ];
 
   const serviceAreas = [
@@ -92,9 +94,10 @@ const ContactPage: React.FC = () => {
         Contact Zero Flames
       </h1>
       <p className="text-xl max-w-3xl font-light mx-auto text-red-100 leading-relaxed">
-        Contact Zero Flames – Kozhikode's fire protection consultants for NOC, 
-        inspections, and safety systems. Get your free consultation today.
+        We delivers end-to-end fire protection services, tailored to your needs. Trusted, reliable, and complete fire safety solutions, all in one place.
       </p>
+      
+      
     </div>
 
     {/* Mobile Hero (clean, short, no gradient) */}
@@ -103,7 +106,7 @@ const ContactPage: React.FC = () => {
         Contact Us
       </h1>
       <p className="text-sm text-gray-600 mt-2 font-light">
-        Fire safety experts in Kozhikode
+        Fire safety experts
       </p>
     </div>
 
@@ -311,13 +314,13 @@ const ContactPage: React.FC = () => {
                        hover:bg-green-600 transition-colors flex items-center justify-center shadow-md"
           >
             <MessageCircle className="w-5 h-5 mr-2" />
-            WhatsApp: +91 9876543210
+            WhatsApp: +91 9995125633
           </a>
         </div>
 
         {/* Visit Our Office Map */}
         <div className="flex-1">
-  <h3 className="text-lg font-light text-gray-900 mb-4">Visit Our Office</h3>
+  <h3 className="text-2xl font-light text-gray-900 mb-4">Visit Our Office</h3>
   <p className="font-light text-gray-600 max-w-2xl mx-auto pb-10">
     Find us at our headquarters in Kozhikode. Conveniently located and always open for our valued clients.
   </p>
@@ -403,7 +406,7 @@ const ContactPage: React.FC = () => {
       {/* Right side call button */}
       <div className="w-full md:w-auto">
         <a
-          href="tel:+919876543210"
+          href="tel:+91 9995125633"
           className="w-full md:w-auto inline-flex items-center justify-center gap-2 
                      bg-white text-red-700 font-medium px-6 py-3 rounded-lg 
                      shadow-md hover:bg-gray-100 transition-all"
@@ -422,7 +425,7 @@ const ContactPage: React.FC = () => {
               d="M3 5a2 2 0 012-2h2.28a1 1 0 01.948.684l1.518 4.55a1 1 0 01-.502 1.21l-1.292.646a11.042 11.042 0 005.516 5.516l.646-1.292a1 1 0 011.21-.502l4.55 1.518A1 1 0 0121 18.72V21a2 2 0 01-2 2h-1C9.163 23 1 14.837 1 5V4a2 2 0 012-2h2z"
             />
           </svg>
-          +91 9876543210
+          +91 9995125633
         </a>
       </div>
 

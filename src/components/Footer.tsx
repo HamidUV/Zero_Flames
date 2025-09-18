@@ -24,8 +24,8 @@ const Footer: React.FC = () => {
               className="h-14 w-auto mb-4"
             />
             <p className="text-gray-400 font-light mb-4 leading-relaxed max-w-sm">
-              Kerala's premier fire protection and consultancy company, providing 
-              comprehensive fire safety solutions across Kozhikode and surrounding districts.
+              Premier fire protection and consultancy company, providing 
+              comprehensive fire safety solutions.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
@@ -67,22 +67,22 @@ const Footer: React.FC = () => {
               <div className="flex items-center md:justify-end space-x-3">
                 <Phone className="w-5 h-5 text-red-500" />
                 <div>
-                  <p>+91 9876543210</p>
-                  <p>+91 8765432109</p>
+                  <p>+91 9995125633</p>
+                  <p>0495 4057944</p>
                 </div>
               </div>
               
               <div className="flex items-center md:justify-end space-x-3">
                 <Mail className="w-5 h-5 text-red-500" />
-                <p>info@zeroflames.com</p>
+                <p>zeroflames.info@gmail.com</p>
               </div>
               
               <div className="flex items-center md:justify-end space-x-3">
                 <MapPin className="w-5 h-5 text-red-500" />
                 <p>
-                  Eish, Vallath Road<br />
-                  Moozhikal, Kozhikode<br />
-                  Kerala, India
+                  Panathuthazham, Kottooli<br />
+                  {/* Moozhikal, Kozhikode<br /> */}
+                  Calicut , Kerala , 673016
                 </p>
               </div>
             </div>

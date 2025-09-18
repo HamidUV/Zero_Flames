@@ -28,18 +28,18 @@ const AboutPage: React.FC = () => {
   const achievements = [
     { icon: <Award className="w-6 h-6" />, title: "ISO Certified", desc: "Quality management certified" },
     { icon: <Users className="w-6 h-6" />, title: "Expert Team", desc: "Trained & certified professionals" },
-    { icon: <MapPin className="w-6 h-6" />, title: "Local Expertise", desc: "Deep knowledge of Kerala regulations" },
+    { icon: <MapPin className="w-6 h-6" />, title: "Standards-Driven", desc: "Compliant with NBC, NFPA & global fire codes" },
     { icon: <Clock className="w-6 h-6" />, title: "15+ Years", desc: "Proven track record" }
   ];
 
   const whyChooseUs = [
-    "Government registered fire protection contractor",
-    "100% Fire NOC approval success rate",
-    "24/7 emergency support and maintenance",
+    "15+ Years of Industry Expertise",
+    // "100% Fire NOC approval success rate",
+    "24/7 emergency support",
     "Competitive pricing with no hidden costs",
-    "Latest technology and equipment",
-    "Experienced team of certified engineers",
     "Comprehensive insurance coverage",
+    // "Latest technology and equipment",
+    "Experienced team of certified engineers",
     "Regular training and certification updates"
   ];
 
@@ -74,7 +74,7 @@ const AboutPage: React.FC = () => {
         About Zero Flames
       </h1>
       <p className="text-xl max-w-3xl mx-auto text-red-100 leading-relaxed font-light">
-        Kerala's premier fire protection and consultancy company, dedicated to providing 
+        Premier fire protection and consultancy company, dedicated to providing 
         comprehensive fire safety solutions with over 15 years of expertise.
       </p>
     </div>
@@ -95,7 +95,7 @@ const AboutPage: React.FC = () => {
 
 
       {/* Main About Section */}
-      <section className="bg-white overflow-hidden pb-10 mt-6">
+      <section className="bg-white overflow-hidden pb-4 mt-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-stretch">
             
@@ -107,7 +107,7 @@ const AboutPage: React.FC = () => {
               {/* Main Image */}
               <div className="relative flex-grow">
                 <img 
-                  src="https://images.pexels.com/photos/280076/pexels-photo-280076.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                  src="photo_6141122150707349920_y.jpg" 
                   alt="Zero Flames fire protection team in Kozhikode Kerala"
                   className="w-full h-96 object-cover rounded-2xl shadow-2xl"
                 />
@@ -144,7 +144,7 @@ const AboutPage: React.FC = () => {
               <h2 className="text-4xl font-light text-gray-900 mb-4">
                 Our Story
               </h2>
-              <div className="text-2xl text-red-600 font-light mb-6">
+              <div className="text-lg text-red-600 font-light mb-6">
                 "Zero Risk, Zero Flames"
               </div>
 
@@ -180,56 +180,11 @@ const AboutPage: React.FC = () => {
       </section>
 
       {/* Mission, Vision, Values */}
-<section className="py-20 bg-gray-50">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    {/* Section Title */}
-    <div className="text-center mb-16" data-aos="fade-up">
-      <h2 className="text-3xl font-light text-gray-900 mb-4">Our Foundation</h2>
-      <p className="text-gray-600 max-w-2xl mx-auto font-light">
-        Built on strong values and clear vision, we strive to exceed expectations in every project.
-      </p>
-    </div>
 
-    {/* Values Grid */}
-    <div className="grid md:grid-cols-3 gap-8">
-      {values.map((value, index) => (
-        <div
-          key={index}
-          className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-500 group relative overflow-hidden"
-          data-aos="fade-up"
-          data-aos-delay={index * 150}
-        >
-          {/* Decorative gradient border */}
-          <div className="absolute inset-0 border-2 border-transparent group-hover:border-red-400 rounded-2xl pointer-events-none"></div>
-
-          {/* Icon & Title in the same line */}
-          <div className="flex items-center mb-4">
-            <div className="relative z-10 bg-red-100 w-14 h-14 rounded-2xl flex items-center justify-center mr-4 group-hover:bg-red-600 transition-all duration-300">
-              <div className="text-red-600 group-hover:text-white transition-colors text-xl">
-                {value.icon}
-              </div>
-            </div>
-            <h3 className="relative z-10 text-xl font-light text-gray-900 group-hover:text-red-600 transition-colors">
-              {value.title}
-            </h3>
-          </div>
-
-          {/* Description */}
-          <p className="relative z-10 text-gray-600 leading-relaxed text-sm font-light">
-            {value.description}
-          </p>
-
-          {/* Subtle hover highlight */}
-          <div className="absolute inset-0 bg-gradient-to-tr from-red-50 via-transparent to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-500 rounded-2xl"></div>
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
 
 
       {/* Service Areas & Stats */}
-      <section className="py-20 bg-white">
+      <section className=" bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-stretch">
             

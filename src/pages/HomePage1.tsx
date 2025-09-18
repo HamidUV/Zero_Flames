@@ -51,7 +51,7 @@ const HomePage1: React.FC = () => {
         <div className="inline-flex items-center px-4 py-2 bg-yellow-400 rounded-full 
                         text-red-800 text-xs sm:text-sm  mt-4 animate-pulse mb-6">
           <Shield className="w-4 h-4 mr-2" />
-          Kerala's Trusted Fire Protection Experts
+          Trusted Fire Protection Experts
         </div>
 
         {/* Heading */}
@@ -110,33 +110,58 @@ const HomePage1: React.FC = () => {
 
 
       {/* Stats Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {[
-              { icon: <Award className="w-8 h-8" />, value: "500+", label: "Projects Completed" },
-              { icon: <Users className="w-8 h-8" />, value: "200+", label: "Happy Clients" },
-              { icon: <Shield className="w-8 h-8" />, value: "100%", label: "NOC Success" },
-              { icon: <Clock className="w-8 h-8" />, value: "24/7", label: "Support" },
-            ].map((stat, index) => (
-              <div
-                key={index}
-                className="text-center group"
-                data-aos="fade-up"
-                data-aos-delay={index * 150}
-              >
-                <div className="bg-red-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 
-                group-hover:scale-110 transition-all duration-300">
-  <div className="text-white">{stat.icon}</div>
-</div>
+      <section className="py-10 bg-gray-50">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="grid grid-cols-3 gap-8">
+      {[
+        {
+          icon: <Award className="w-8 h-8" />,
+          value: "500+",
+          labelDesktop: "Projects & Happy Clients",
+          labelMobile: "Projects",
+        },
+        {
+          icon: <Shield className="w-8 h-8" />,
+          value: "100%",
+          labelDesktop: "NOC Success",
+          labelMobile: "NOC Success", // same for both
+        },
+        {
+          icon: <Clock className="w-8 h-8" />,
+          value: "24/7",
+          labelDesktop: "Support",
+          labelMobile: "Support", // same for both
+        },
+      ].map((stat, index) => (
+        <div
+          key={index}
+          className="text-center group"
+          data-aos="fade-up"
+          data-aos-delay={index * 150}
+        >
+          <div
+            className="bg-red-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 
+                group-hover:scale-110 transition-all duration-300"
+          >
+            <div className="text-white">{stat.icon}</div>
+          </div>
 
-                <div className="text-3xl font-light text-gray-900 mb-2">{stat.value}</div>
-                <div className="text-gray-600 font-light">{stat.label}</div>
-              </div>
-            ))}
+          <div className="text-3xl font-light text-gray-900 mb-2">
+            {stat.value}
+          </div>
+
+          {/* Label with responsive text */}
+          <div className="text-gray-600 font-light">
+            <span className="hidden sm:inline">{stat.labelDesktop}</span>
+            <span className="sm:hidden">{stat.labelMobile}</span>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
+
 
       {/* About Preview */}
       <section className="py-16 bg-white overflow-hidden">
@@ -144,7 +169,7 @@ const HomePage1: React.FC = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center font-light">
             <div data-aos="fade-right">
               <h2 className="text-3xl text-gray-900 mb-4">About Zero Flames</h2>
-              <div className="text-xl text-red-600 font-medium mb-4">"Zero Risk, Zero Flames"</div>
+              {/* <div className="text-xl text-red-600 font-medium mb-4">"Zero Risk, Zero Flames"</div> */}
               <p className="text-gray-600 font-light mb-6 leading-relaxed">
                 Zero Flames is Kerala's premier fire protection and consultancy company, based in 
                 Kozhikode. We specialize in providing comprehensive fire safety solutions with 
@@ -153,7 +178,11 @@ const HomePage1: React.FC = () => {
               <div className="space-y-2 mb-6">
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span className="text-gray-700 font-light">Government registered contractor</span>
+                  <span className="text-gray-700 font-light">15+ Years of Industry Expertise</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <span className="text-gray-700 font-light">Trusted by 500+ Clients Across Kerala</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-green-500" />
@@ -175,7 +204,7 @@ const HomePage1: React.FC = () => {
 
             <div data-aos="fade-left" data-aos-delay="300">
               <img 
-                src="https://images.pexels.com/photos/280076/pexels-photo-280076.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                src="https://i.pinimg.com/736x/d6/de/c2/d6dec259b8d69d3a4fcf25a42b7318d4.jpg" 
                 alt="Zero Flames fire protection team"
                 className="w-full h-80 object-cover rounded-2xl shadow-lg"
               />
