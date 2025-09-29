@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Award, Users, MapPin, Clock, CheckCircle, Target, Eye, Heart } from 'lucide-react';
+import IndiaMap from '../components/IndiaMap';
 
 const AboutPage: React.FC = () => {
   const leftContentRef = useRef<HTMLDivElement>(null);
@@ -196,14 +197,11 @@ const AboutPage: React.FC = () => {
               </p>
 
               <div className="grid grid-cols-2 gap-6 flex-1">
-                <div className="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-xl flex flex-col items-center justify-center">
-                  <div className="text-4xl font-light text-red-600 mb-2">500+</div>
-                  <div className="text-gray-700 font-light text-center">Projects Completed</div>
-                </div>
-                <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl flex flex-col items-center justify-center">
-                  <div className="text-4xl font-light text-blue-600 mb-2">200+</div>
-                  <div className="text-gray-700 font-light text-center">Happy Clients</div>
-                </div>
+                <div className="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-xl flex flex-col items-center justify-center col-span-2">
+  <div className="text-4xl font-light text-red-600 mb-2">500+</div>
+  <div className="text-gray-700 font-light text-center">Projects & Happy Clients</div>
+</div>
+
                 <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-xl flex flex-col items-center justify-center">
                   <div className="text-4xl font-light text-green-600 mb-2">100%</div>
                   <div className="text-gray-700 font-light text-center">NOC Success Rate</div>
@@ -216,49 +214,55 @@ const AboutPage: React.FC = () => {
             </div>
 
             {/* Right: Service Areas + Certifications */}
-            <div className="flex flex-col justify-between bg-white p-6 rounded-2xl shadow-sm">
-              
-              {/* Service Areas */}
-              <div className="mb-1">
-                <h2 className="text-3xl font-light text-gray-900 mb-6">Service Areas</h2>
-                <p className="text-gray-600 mb-8 font-light">
-                  We proudly serve clients across Kerala, with our headquarters in Kozhikode 
-                  and service coverage extending to all major districts.
-                </p>
+            {/* Right: Service Areas + Certifications */}
+<div className="flex flex-col justify-between bg-white p-6 rounded-2xl shadow-sm">
+  
+  {/* Service Areas with IndiaMap */}
+  <div className="mb-6">
+    <h2 className="text-3xl font-light text-gray-900 mb-6">Service Areas</h2>
+    <p className="text-gray-600 mb-8 font-light text-justify">
+      We proudly serve clients across Kerala, with our headquarters in Kozhikode,
+      and extend our fire protection services to all major districts — while
+      also offering support across India.
+    </p>
 
-                <div className="grid grid-cols-2 gap-4 mb-8">
-                  {['Kozhikode', 'Wayanad', 'Malappuram', 'Kannur'].map((area, index) => (
-                    <div key={index} className="bg-red-50 p-3 rounded-lg text-center">
-                      <span className="text-red-800 font-light">{area}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
+    {/* Map */}
+    <div className="mb-8">
+      <IndiaMap />
+    </div>
 
-              {/* Certifications */}
-              <div className="p-6 bg-gray-50 rounded-xl">
-                <h4 className="font-light text-gray-900 mb-4">Certifications & Accreditations</h4>
-                <div className="space-y-2">
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="w-5 h-5 text-green-500" />
-                    <span className="text-gray-700 font-light">ISO 9001:2015 Quality Management</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="w-5 h-5 text-green-500" />
-                    <span className="text-gray-700 font-light">Government Registered Contractor</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="w-5 h-5 text-green-500" />
-                    <span className="text-gray-700 font-light">NFPA Certified Professionals</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="w-5 h-5 text-green-500" />
-                    <span className="text-gray-700 font-light">Kerala Fire Force Approved</span>
-                  </div>
-                </div>
-              </div>
+    {/* Highlighted districts */}
+    {/* <div className="grid grid-cols-2 gap-4">
+      {["Kozhikode", "Wayanad", "Malappuram", "Kannur"].map((area, index) => (
+        <div key={index} className="bg-red-50 p-3 rounded-lg text-center">
+          <span className="text-red-800 font-light">{area}</span>
+        </div>
+      ))}
+    </div> */}
+  </div>
 
-            </div>
+  {/* Certifications */}
+  {/* <div className="p-6 bg-gray-50 rounded-xl">
+    <h4 className="font-light text-gray-900 mb-4">
+      Certifications & Accreditations
+    </h4>
+    <div className="space-y-2">
+      {[
+        "ISO 9001:2015 Quality Management",
+        "Government Registered Contractor",
+        "NFPA Certified Professionals",
+        "Kerala Fire Force Approved",
+      ].map((cert, idx) => (
+        <div key={idx} className="flex items-center space-x-3">
+          <CheckCircle className="w-5 h-5 text-green-500" />
+          <span className="text-gray-700 font-light">{cert}</span>
+        </div>
+      ))}
+    </div>
+  </div> */}
+</div>
+
+  
           </div>
         </div>
       </section>
