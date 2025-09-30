@@ -235,7 +235,7 @@ const HomePage1: React.FC = () => {
                   "Training Programs",
                   "Fire Consultation Services",
                   "Fire Extinguisher Sales & Refilling",
-                  "Alarm System Services"
+                  "Fire Alarm System"
                 ].map((service, idx) => (
                   <li key={idx} className="flex items-start space-x-3">
                     <CheckCircle className="w-5 h-5 text-red-600 mt-1 flex-shrink-0" />
