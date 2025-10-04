@@ -145,19 +145,25 @@ const AboutPage: React.FC = () => {
               <h2 className="text-4xl font-light text-gray-900 mb-4">
                 Our Story
               </h2>
-              <div className="text-lg text-red-600 font-light mb-6">
+              {/* <div className="text-lg text-red-600 font-light mb-6">
                 "Zero Risk, Zero Flames"
-              </div>
+              </div> */}
 
               {/* Shortened Story */}
               <p className="text-md text-gray-600 mb-4 leading-relaxed font-light">
-                For over 15 years, Zero Flames has been Kerala’s trusted fire safety partner. 
-                From residential homes to complex industrial systems, we ensure complete 
-                protection with certified expertise and innovative solutions.
+                 With over 15 years of expertise in the fire and safety industry, Zero Flames 
+brings unmatched knowledge, precision, and commitment to every project 
+we handle. Our work is deeply rooted in our core values of quality, integrity, 
+safety, and sustainability, ensuring that each solution we deliver stands the 
+test of time and trust.
               </p>
               <p className="text-md text-gray-600 mb-8 leading-relaxed font-light">
-                With 500+ completed projects and a 100% Fire NOC approval rate, we combine 
-                technology, training, and local knowledge to deliver unmatched safety standards.
+                We are a service-oriented and independent entity, which means we are free 
+to select only the most suitable and reliable products that meet your specific 
+needs without ever compromising on safety or quality. At Zero Flames, we 
+don't just install systems, we build partnerships grounded in reliability, 
+personal attention, and a genuine commitment to protecting what matters 
+most.
               </p>
 
 

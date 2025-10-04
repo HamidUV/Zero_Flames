@@ -171,9 +171,10 @@ const HomePage1: React.FC = () => {
               <h2 className="text-3xl text-gray-900 mb-4">About Zero Flames</h2>
               {/* <div className="text-xl text-red-600 font-medium mb-4">"Zero Risk, Zero Flames"</div> */}
               <p className="text-gray-600 font-light mb-6 leading-relaxed">
-                Zero Flames is Kerala's premier fire protection and consultancy company, based in 
-                Kozhikode. We specialize in providing comprehensive fire safety solutions with 
-                over 15 years of experience.
+                Zero Flames is a fire and safety solutions provider, offering end-to-end services in 
+the design, supply, installation, testing, and maintenance of fire protection systems. 
+We are committed to creating safer environments for residential, commercial, and 
+industrial spaces with our advanced and reliable safety systems.
               </p>
               <div className="space-y-2 mb-6">
                 <div className="flex items-center space-x-3">
@@ -259,7 +260,7 @@ const HomePage1: React.FC = () => {
             {/* Right: Services Image */}
             <div data-aos="fade-left">
               <img 
-                src="/services-overview-zero_flames.jpg"  
+                src="/photo_6141122150707349921_y.jpg"  
                 alt="Zero Flames Fire Safety Services Overview" 
                 className="w-full h-[28rem] object-cover rounded-2xl shadow-lg"
               />
